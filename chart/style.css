@@ -1,0 +1,32 @@
+body {
+    margin:0px;
+	background-color:#FFF;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#header{
+background-color:#FFFF99;
+border-bottom: #FFFF66 3px solid;
+
+}
+
+.clear{
+clear:both;}
+
+#footer{
+border-top:3px #CCCCCC solid; 
+background-color:#efefef;
+padding:10px 10px 10px 20px;
+}
+
+#container{
+padding:20px;}
+
+#noscript{
+	background-color:#F90;
+	padding:10px;
+	font-size:12px;
+	color:#fff;
+	border-bottom:#F60 1px solid;
+	}
