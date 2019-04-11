@@ -1,0 +1,1004 @@
+h1,h2,h3 {
+    margin: 0;
+	text-align: center;
+    font-family: "Archive";
+    text-transform: uppercase;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+	-ms-user-select: none;
+
+	-moz-user-select: none;
+
+	-khtml-user-select: none;
+
+	-webkit-user-select: none;
+    background-color: transparent;
+    font-family: "IgraSans";
+    width: 100%;
+    overflow: scroll;
+
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar 
+{ 
+    width: 10px; 
+}
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track 
+{ 
+    background-color:#080a19;
+}
+html::-webkit-scrollbar-button, body::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:10px;
+height:0px
+}
+
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#8d0ae4;
+}
+
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover{
+background-color:#e40981;
+}
+
+html::-webkit-resizer, body::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:10px;
+height:0px;
+}
+#fullscreen_btn
+{
+    background-image:url('../img/fullscreen_btn.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 59px;
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 999;       
+    float: right;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+#fullscreen_btn:hover
+{
+    background-image:url('../img/fullscreen_btn_hover.png');
+}
+body
+{
+    overflow: hidden;
+}
+label {
+    margin-bottom: 0;
+}
+ul{
+	list-style: none;
+}
+#wrapper
+{
+    text-align: -webkit-center;
+}
+#header {
+    clear: both;
+    height: 50px;
+    max-width: 1236px;
+    min-width: 720px;
+    margin: 0 auto;
+}
+.home-second-teasers
+{
+    text-align: center;
+    padding: 20px;
+}
+.home-teaser-header
+{
+    font-size: 25px;
+    color: #e80882;
+}
+.home-teaser-text
+{
+    font-size: 20px;
+    color: #fff;
+
+}
+.home-title
+{
+    color: #ffffff;
+    background: -webkit-linear-gradient(0deg, rgb(142, 12, 222) 30%, rgb(227, 9, 131) 70%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    display: inline-table;
+    font-size: 30px;
+}
+.big-center {
+    position: relative;
+    clear: both;
+    min-width: 650px;
+    overflow: visible;
+	padding: 30px;
+}
+
+/*
+.col2 {
+    float: left;
+    position: relative;
+    overflow: visible;
+    z-index: 100;
+	border-radius: 5px;
+	width:calc(100% - 280px);
+	margin-bottom: 30px;
+    width: 100%;
+}*/
+
+body#major_body {
+    background: url(../img/backgraund_cosmos.png) #080a19;
+    background-size: 30%;
+}
+
+p,.p-page {
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+    line-height: 1.7em;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    word-spacing: 0;
+}
+
+#brain_mozg_img
+{
+    position: absolute;
+    top: 30px;
+    width: 250px;
+    margin-left: 150px;
+}
+#wrapper {
+    float: left;
+	padding: 5px;
+	width: 100%;
+}
+#wrapper-nback,#wrapper-mmath {
+    font-size: .92em;
+    line-height: 1.28em;
+}
+#wrapper-holder
+{
+	width:100%;
+}
+
+/*
+.menu {
+	font-size: 18px;
+	line-height: 1.18em;
+	position: relative;
+	padding: 10px;
+    font-family: "Archive";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.mi {
+    display: block;
+	margin: 10px 15px 10px 15px;
+    min-height: 32px;
+    color: #828282;
+    padding: 5px;
+    border-bottom: 1px solid #828282;
+}
+.mi:hover {
+    box-shadow: 1px 1px 5px 0 #828282;
+}
+.milnk,.milnk:link,.milnk:visited {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.miact {
+    color: #828282;
+    box-shadow: 1px 1px 5px 0 #828282;
+}
+
+.milnkact {
+    color: #ffffff!important;
+}
+*/
+.miact>a {
+    background: #e4097f !important;
+    padding-left: 25px !important;
+}
+
+.game_category_title
+{
+    border-radius: 30px;
+    display: table;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    margin: 30px;
+    font-size: 30px;
+}
+.game_category_title_memory
+{
+    background: #9206e5;
+}
+.game_category_title_attention
+{
+    background: #e80882;
+}
+.game_category_title_speed
+{
+    background: #05a0e2;
+}
+.game_category_title_mental
+{
+    background: #35e808;
+}
+.game_category_block
+{
+    text-align: -webkit-center;
+    display: table;
+}
+.games-content__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.games-content__item {
+    width: 305px;
+    margin-bottom: 26px;
+}
+.game-preview 
+{
+	position: relative;
+	min-width: 260px;
+	height: 225px;
+	padding: 0;
+	font-size: 16px;
+	overflow: hidden;
+	margin: 5px;
+    table-layout: auto;
+    display: inline-flex;
+}
+.game-preview:hover
+{
+    
+}
+.game-preview__link 
+{
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+}
+.game-preview__link:hover
+{
+    color: #333;
+    text-decoration: none;
+}
+.game-preview__img-wrap 
+{
+    width: 100px;
+    height: 100px;
+    background: url(../img/locked.png) no-repeat, url(../img/dlc.png) no-repeat;
+    background-size: 50px;
+    background-position: center, left top;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid;
+    border-bottom: none;
+    text-align: -webkit-center;
+    padding: 15px;
+}
+.game-preview_memory .game-preview__img-wrap, .game-preview_memory .game-preview__about
+{
+    border-color: #9206e5;
+}
+
+.game-preview_attention .game-preview__img-wrap, .game-preview_attention .game-preview__about
+{
+    border-color: #e80882;
+}
+.game-preview_mental .game-preview__img-wrap, .game-preview_mental .game-preview__about
+{
+    border-color: #35e808;
+}
+.game-preview_speed .game-preview__img-wrap, .game-preview_speed .game-preview__about
+{
+    border-color: #05a0e2;
+}
+
+.game-preview__img 
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.1;       
+}
+.game-preview__about 
+{
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 5px;
+    height: 125px;
+    border: 2px solid;
+}
+.game-preview__title
+{
+    font-family: "IgraSans"; 
+    color: #2799d7;
+    font-size: 18px;
+}
+.game-preview__group
+{
+	color: #fff;
+}
+.train_ifarme
+{
+	text-align: center;
+	position: relative;
+	z-index: 199;
+	margin: 0 auto;
+	width: 100%;
+}
+.train_ifarme>iframe
+{
+	overflow: hidden;
+	width: 100%;
+    border: none;
+}
+#wrapper>section {
+	display: none;
+	padding: 15px;
+}
+#wrapper>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Ïðÿ÷åì ÷åêáîêñû */
+
+
+#nhead {
+	padding: 5px;
+
+	font-size: 1em;
+	background-color: #bfbfbf;
+	color: #fff;
+	text-align: center;
+	background: url(../img/head_anshtein.png) #00adee;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+	background-position: left;
+}
+#nhead>h1
+{
+	margin: 30px;
+	color: #fff;	
+	font-size: 3em;
+}
+#resultswindow 
+{
+	padding: 10px;
+	display: none;
+	padding: 10px 30px 0px;
+	max-width: 768px;
+	margin: 0 auto;
+	text-align: center;
+}
+.table_result tr>td:nth-child(2), .table_result tr>td:nth-child(3)
+{
+	color: #333;
+	width: 150px;
+	text-align: left;
+	font-size: 20px;
+}
+.table_result tr>td:nth-child(1)
+{
+	color: #fff;
+	text-align: left;
+	font-size: 20px;
+	width: auto;
+}
+#resultstwo
+{
+	border: 2px solid #e4097f;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	color: #333;
+}
+
+.btn {
+    padding: 10px !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+    padding: 10px 30px 10px 30px !important;
+    width: auto !important;
+    text-align: center !important;
+    margin: 5px !important;
+    display: inline-block !important;
+}
+.pure-button {
+    background: #8d0ae4 !important;
+    color: #FFFFFF !important;
+    font-size: 30px !important;
+    border-radius: 30px !important;
+    letter-spacing: 2px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+.pure-button:hover
+{
+	background: #b23fff !important;
+}
+.slide-button {
+	color: #bbadd7 !important;
+	font-size: 55px !important;
+	border-radius: 30px !important;
+	letter-spacing: 4px !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+	width: 65px !important;
+	padding: 0 !important;
+	height: 60px;
+	margin-top: 31px !important;
+	vertical-align: middle;
+}
+.slide-button:hover
+{
+	color: #39059e !important;
+}
+.train_regularity_screen__slides
+{
+	text-align: center;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.train_regularity_screen__slide
+{
+	display: inline-block;
+	border-radius: 45px;
+	height: 75px;
+	width: 75px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 13px;
+}
+.current_day
+{
+	background-color: #e4097f;
+	color: #fff;
+}
+#lang_select
+{
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/**
+ * Переключаемая боковая панель навигации
+ * выдвигающаяся по клику слева
+ */
+ 
+.nav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: -320px;
+    padding: 15px 20px;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+    background: #000;
+    z-index: 2000;
+    background: #ffffff10;
+    text-transform: uppercase;
+
+}
+ .nav::-webkit-scrollbar { width: 0; }
+/**
+ * Кнопка переключения панели
+ * тег <label>
+ */
+ 
+.nav-toggle {
+    /* абсолютно позиционируем */
+    position: absolute;
+    /* относительно левого края панели */
+    left: 320px;
+    /* отступ от верхнего края панели */
+    top: 0;
+    /* внутренние отступы */
+    padding: 20px 15px 10px 15px;
+    /* определяем цвет фона переключателя
+     * чаще вчего в соответствии с цветом фона панели
+    */
+    background: inherit;
+    /* цвет текста */
+    color: #fff;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 35px;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+ 
+/* определяем текст кнопки 
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+ 
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+}
+ 
+/* цвет текста при наведении */
+ 
+.nav-toggle:hover {
+    color: #f4f4f4;
+}
+ 
+/**
+ * Скрытый чекбокс (флажок)
+ * невидим и недоступен :)
+ * имя селектора атрибут флажка
+ */
+ 
+[id='nav-toggle'] {
+    position: absolute;
+    display: none;
+}
+ 
+/**
+ * изменение положения переключателя 
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+ 
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em;
+}
+ 
+/**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+ 
+[id='nav-toggle']:checked ~ .nav {
+    left: 0;
+    box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+    overflow-y: auto;
+}
+ 
+/* 
+ * смещение контента страницы
+ * на размер ширины панели,
+ * фишка необязательная, на любителя
+*/
+ 
+[id='nav-toggle']:checked ~ div.main > div > div {
+    -webkit-transform: translateX(320px);
+    -moz-transform: translateX(320px);
+    transform: translateX(320px);
+}
+ 
+/*
+ * изменение символа переключателя,
+ * привычный крестик (MULTIPLICATION X), 
+ * вы можете испльзовать любой другой значок
+*/
+ 
+[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+    content: '\2715';
+}
+ 
+/**
+ * профиксим баг в Android <= 4.1.2
+ * см: http://timpietrusky.com/advanced-checkbox-hack
+ */
+ 
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+ 
+@-webkit-keyframes bugfix {
+    to {
+      padding: 0;
+    }
+}
+ 
+/**
+ * позаботьтимся о средних и маленьких экранах
+ * мобильных устройств
+ */
+ 
+@media screen and (min-width: 320px) {
+    html,
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+}
+ 
+@media screen and (max-width: 320px) {
+    html,
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .nav {
+      width: 100%;
+      box-shadow: none
+    }
+}
+ 
+/**
+ * Формируем стиль заголовка (логотип) панели 
+*/
+ 
+.nav h2 {
+    width: 90%;
+    padding: 0;
+    margin: 10px 0px 40px 0px;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, rgba(0, 0, 0, .5) 1px 1px 1px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -webkit-transform: scale(0.1, 0.1);
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transition: opacity 0.8s, transform 0.8s;
+    -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+    -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+    -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+    color: #fff;
+
+}
+ 
+/*плавное появление заголовка (логотипа) при раскрытии панели */
+ 
+[id='nav-toggle']:checked ~ .nav h2 {
+    opacity: 1;
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+ 
+/**
+ * формируем непосредственно само меню
+ * используем неупорядоченный список для пунктов меню
+ * прикрутим трансфомации и плавные переходы
+ */
+ 
+.nav > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Archive";
+}
+ 
+.nav > ul > li {
+    line-height: 1.3;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+ 
+[id='nav-toggle']:checked ~ .nav > ul > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+ 
+/* определяем интервалы появления пунктов меню */
+ 
+.nav > ul > li:nth-child(2) {
+    -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+    transition: opacity .5s .2s, transform .5s .2s;
+}
+ 
+.nav > ul > li:nth-child(3) {
+    -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+    transition: opacity .5s .3s, transform .5s .3s;
+}
+ 
+.nav > ul > li:nth-child(4) {
+    -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+    transition: opacity .5s .4s, transform .5s .4s;
+}
+ 
+.nav > ul > li:nth-child(5) {
+    -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+    transition: opacity .5s .5s, transform .5s .5s;
+}
+ 
+.nav > ul > li:nth-child(6) {
+    -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+    transition: opacity .5s .6s, transform .5s .6s;
+}
+ 
+.nav > ul > li:nth-child(7) {
+    -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+    transition: opacity .5s .7s, transform .5s .7s;
+}
+.nav > ul > li:nth-child(8) {
+    -webkit-transition: opacity .5s .8s, -webkit-transform .5s .8s;
+    transition: opacity .5s .8s, transform .5s .8s;
+}
+ 
+.nav > ul > li:nth-child(9) {
+    -webkit-transition: opacity .5s .9s, -webkit-transform .5s .9s;
+    transition: opacity .5s .9s, transform .5s .9s;
+}
+ 
+.nav > ul > li:nth-child(10) {
+    -webkit-transition: opacity .5s 1.0s, -webkit-transform .5s 1.0s;
+    transition: opacity .5s 1.0s, transform .5s 1.0s;
+}
+.nav > ul > li:nth-child(11) {
+    -webkit-transition: opacity .5s 1.1s, -webkit-transform .5s 1.1s;
+    transition: opacity .5s 1.1s, transform .5s 1.1s;
+}
+ 
+.nav > ul > li:nth-child(12) {
+    -webkit-transition: opacity .5s 1.2s, -webkit-transform .5s 1.2s;
+    transition: opacity .5s 1.2s, transform .5s 1.2s;
+}
+.nav > ul > li:nth-child(13) {
+    -webkit-transition: opacity .5s 1.3s, -webkit-transform .5s 1.3s;
+    transition: opacity .5s 1.3s, transform .5s 1.3s;
+}
+.nav > ul > li:nth-child(14) {
+    -webkit-transition: opacity .5s 1.4s, -webkit-transform .5s 1.4s;
+    transition: opacity .5s 1.4s, transform .5s 1.4s;
+}
+/**
+ * оформление ссылок пунктов меню
+ */
+
+.nav > ul > li:nth-child(2)>a {
+    background-color: rgba(1, 160, 226, 1);
+}
+ 
+.nav > ul > li:nth-child(3)>a {
+    background-color: rgba(1, 160, 226, 0.9);
+}
+.nav > ul > li:nth-child(4)>a {
+    background-color: rgba(1, 160, 226, 0.8);
+}
+ 
+.nav > ul > li:nth-child(5)>a {
+    background-color: rgba(1, 160, 226, 0.7);
+}
+ 
+.nav > ul > li:nth-child(6)>a {
+    background-color: rgba(1, 160, 226, 0.6);
+}
+ 
+.nav > ul > li:nth-child(7)>a {
+    background-color: rgba(1, 160, 226, 0.5);
+}
+.nav > ul > li:nth-child(8)>a {
+    background-color: rgba(1, 160, 226, 0.4);
+}
+ 
+.nav > ul > li:nth-child(9)>a {
+    background-color: rgba(1, 160, 226, 0.3);
+}
+ 
+.nav > ul > li:nth-child(10)>a {
+    background-color: rgba(1, 160, 226, 0.2);
+}
+.nav > ul > li:nth-child(11)>a {
+    background-color: rgba(1, 160, 226, 0.15);
+}
+ 
+.nav > ul > li:nth-child(12)>a {
+    background-color: rgba(1, 160, 226, 0.1);
+}
+.nav > ul > li:nth-child(13)>a {
+    background-color: rgba(1, 160, 226, 0.08);
+}
+.nav > ul > li:nth-child(14)>a {
+    background-color: rgba(1, 160, 226, 0.05);
+}
+.nav > ul > li > a {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 5px 5px 20px;
+    background-color: #01a0e2;
+    margin: 5px 15px 5px 0px;
+    /* плавный переход */
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+ 
+/**
+ * состояние ссылок меню при наведении
+ */
+ 
+.nav > ul > li > a:hover,
+.nav > ul > li > a:focus {
+    color: white;
+    padding-left: 25px;
+}
+ 
+/**
+ * линия подчеркивания ссылок меню
+ */
+ 
+.nav > ul > li > a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+ 
+.nav > ul > li > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    /*background: #fff;*/
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+ 
+/**
+ * анимируем линию подчеркивания 
+ * ссылок при наведении
+ */
+ 
+.nav > ul > li > a:hover:before {
+    width: 0%;
+    /*background: #fff;*/
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+ 
+.nav > ul > li > a:hover:after {
+    width: 0%;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+ 
+/* фон затемнения на основной контент 
+
+*/
+ #return_home_icone
+ {
+    position: absolute;
+    width: 60px;
+    left: 390px;
+    top: 0;
+    padding: 10px 5px;
+    cursor: pointer;
+    z-index: 2001; 
+ }
+  #return_home_icone:hover
+ {
+    position: absolute;
+    width: 65px;
+    left: 390px;
+    top: 0;
+    padding: 7px 5px;
+    cursor: pointer;
+    z-index: 2001; 
+ }
+.mask-content {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+}
+
+[id='nav-toggle']:checked ~ .mask-content {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
+}
+
+@font-face {
+    font-family: Archive; 
+    src: url(./fonts/Archive.otf); 
+}
+@font-face {
+    font-family: IgraSans; 
+    src: url(./fonts/IgraSans.otf); 
+}

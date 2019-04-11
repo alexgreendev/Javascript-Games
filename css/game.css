@@ -1,0 +1,480 @@
+﻿html, body {
+	margin: 0;
+	font-size: 20px;
+	display: table;
+    width: 100%;
+	-ms-user-select: none;
+
+	-moz-user-select: none;
+
+	-khtml-user-select: none;
+
+	-webkit-user-select: none;
+	font-family: "IgraSans";
+	color: #fff;
+    overflow: hidden;
+}
+#nhead>h1
+{
+	color: #ffffff;
+    background: -webkit-linear-gradient(0deg, rgb(142, 12, 222) 30%, rgb(227, 9, 131) 70%);
+    padding: 15px 23px 15px 20px;
+    border-radius: 50px;
+    display: inline-table;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 79px;
+    min-width: 350px;
+}
+#nhead>h1:after
+{
+	content: ' ';
+    background: url(../img/tarelka_nlo.png) no-repeat;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background-size: contain;
+    top: 0px;
+    left: 50%;
+    margin-left: -150px;
+}
+h1 {
+    font-size: 1.65em;
+    color: #fff;
+	text-align: center;
+	font-family: "Archive";
+}
+h2, h3 {
+    margin: 0;
+    text-align: center;
+    font-family: "IgraSans";
+}
+p
+{
+	margin: 5px;
+}
+body>section {
+	display: none;
+	padding: 15px;
+}
+#content-tab1
+{
+	display: block;
+}
+body>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #ffffff;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+body>section>ul
+{
+	color: #ffffff;
+}
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.game_menu input, #resultswindow input
+{
+    font-size: 18px;
+    width: 60px;
+    text-align: center;
+}
+.game_menu select, #resultswindow select
+{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+    font-family: Igrasans;
+}
+.game_menu div, #resultswindow div
+{
+	margin: 5px;
+}
+.wrapper_game_menu
+{
+    text-align: center;
+}
+.wrapper_game_menu>input {
+    display: none;
+    position: absolute;
+}
+.wrapper_game_menu>label {
+    position: relative;
+	display: inline-block;
+    background: #e40981;
+    color: #FFFFFF;
+    font-family: "Archive";
+    font-size: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    line-height: 1.5;
+    min-width: 300px;
+    font-weight: normal;
+    text-align: -webkit-center;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    height: 45px;
+}
+
+ 
+.wrapper_game_menu>label:hover {
+	color: #fff212;
+	cursor: pointer;
+}
+
+.wrapper_game_menu>input:checked+label {
+	background: #8d0ae4;
+}
+.wrapper_game_menu>label:after
+{
+	position: absolute;
+    content: " ";
+    width: 70px;
+    height: 25px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: #f6c43f;
+    top: 45px;
+    left: 50%;
+    margin-left: -35px;
+}
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
+	display: block;
+}
+.icon-table {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+	text-align: center;
+    background: #080a19;
+}
+
+td {
+	vertical-align: middle;
+	height: 33%;
+	width: 33%;
+	text-align: center;
+	font-size: 25px;
+}
+.border_td
+{
+	border-right: 3px solid #8d0ae4;
+	border-bottom: 3px solid #8d0ae4;
+}
+.border_td_left
+{
+	border-bottom: 3px solid #8d0ae4;
+} 
+.border_td_bot
+{
+	border-right: 3px solid #8d0ae4;
+}
+td div {
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+table {
+	margin: auto;
+	padding: 30px;
+}
+
+img {
+	width: 90%;
+	vertical-align: middle;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#cinco {
+	text-align: center;
+}
+
+
+#plus {
+	vertical-align: middle;
+	position: absolute;
+	font-size: 3em;
+}
+
+.off {
+	background-color: #FFFFFF;
+}
+
+.on {
+	border-radius: 10px;
+	background-color: #e40981;
+}
+
+div {
+	clear: both;
+}
+
+.btn_block
+{
+	padding: 10px;
+	margin: 20px;
+}
+#nhead, .scene_head {
+	padding: 5px;
+	text-align: center;
+    font-family: "Archive";
+}
+.scene_head>h1
+{
+	color: #e80882;
+}
+#study {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 140px;
+}
+
+#instruct 
+{
+	padding: 10px;
+	display: none;
+}
+
+h4 {
+	font-size: 22px;
+	margin: 0 0 0 0;
+}
+h2, h3, h4 {
+	color: #e80882;
+    font-size: 35px;
+    margin: 15px;
+    text-align: -webkit-center;
+    font-weight: normal;
+}
+fieldset
+{
+	border: none;
+}
+.close {
+	margin: auto;
+	text-align: center;
+}
+
+#resultswindow 
+{
+	padding: 10px;
+	display: none;
+	padding: 10px 30px 0px;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.table_result tr>td:nth-child(2)
+{
+	width: 100px;
+	text-align: left;
+    font-size: 25px;
+}
+.table_result tr>td:nth-child(1)
+{
+	text-align: left;
+    font-size: 25px;
+	width: auto;
+}
+#resultstwo
+{
+	border: 2px solid #5f3aa6;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+.game_menu
+{
+	padding: 30px 45px 45px;
+    color: #fff;
+    background: url(../img/boy_on_rocket.png) no-repeat, url(../img/luna_stars.png) no-repeat;
+    background-position: left top, right top;
+    background-size: 25%;
+    min-height: 500px;
+}
+.game_scene
+{
+	text-align: center;
+	color: #fff;
+}
+.pure-button
+{
+    background: #8d0ae4;
+    color: #FFFFFF;
+    font-family: "Archive";
+    font-size: 25px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.pure-button:hover
+{
+	background: #e30983;
+}
+.game_screen_left, .game_screen_right
+{
+    width: 100%;
+    text-align: center;	
+	position: relative;
+	float: left;
+	color: #fff;
+    font-size: 20px;
+}
+
+.game_screen_left div, .game_screen_right div
+{
+    display: inline-block;
+	font-size: 25px;
+}
+.game_footer
+{
+    padding: 10px;
+	text-align: center;
+    color: #fff;
+}
+.btn 
+{
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+    width: auto;
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
+}
+.train__stretch {
+    width: 313px;
+    padding-left: 180px;
+    margin: 0;
+    text-align: center;
+}
+
+.train__stretch, .train__workout {
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#fullscreen_btn
+{
+	float:right;
+	padding: 0;
+}
+#fullscreen_btn:hover
+{
+	background: #ffffff;
+}
+.return_main_menu
+{
+	min-width: auto;
+}
+.answer_chech
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 75px;
+    margin: 10px;
+}
+#question_math
+{
+    font-size: 100px;
+    margin: 30px;
+    font-family: "Archive";
+}
+.range {
+    -webkit-appearance: none;
+    border-radius:2px;
+    height:10px;
+    outline : none;
+    border:1px solid #8d0ae4;
+    margin: 20px 20px 20px 0px;
+}
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:18px;
+    height:18px;
+    background:#e40981;
+    border-radius:18px;
+    cursor:pointer;
+    transition:.1s;
+}
+.range::-webkit-slider-thumb:hover, .range::-webkit-slider-thumb:active{
+    width:24px;
+    height:24px;
+}
+
+
+.cover_scene
+{
+    z-index: 99;
+    background: #201e33;
+    position: absolute;
+    opacity: 0.8;
+}
+.cover_scene_int
+{
+    position: absolute;
+    z-index: 99;
+    font-size: 75px;
+    background: #e40981;
+    font-weight: 900;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-top: 180px;
+    margin-left: -50px;
+    border-radius: 85px;
+    color: #fff;
+    border: 5px solid #8d0ae4;
+    font-family: sans-serif;
+    line-height: 1.3;
+}
+@media screen and (max-width: 650px) 
+{
+	.game_screen_left
+	{
+		width: 100%;
+	}
+	.game_screen_right
+	{
+		width: 100%;
+	}
+}
+@font-face {
+    font-family: Archive; 
+    src: url(./fonts/Archive.otf); 
+}
+@font-face {
+    font-family: IgraSans; 
+    src: url(./fonts/IgraSans.otf); 
+}
