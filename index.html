@@ -1,0 +1,456 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IQ Scale</title>
+<link rel="shortcut icon" href="./img/head_anshtein32.png" type="image/x-icon">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link rel='stylesheet prefetch' href='./css/stars.css'>
+<link rel="stylesheet" href="./css/jquery-ui-custom.0.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css"/>
+    <script src="./js/jquery.js"></script>
+	
+	<script src="./lang/ru.js"></script>
+	<script src="./lang/zh.js"></script>
+	<script src="./lang/zh_l.js"></script>
+	<script src="./lang/de.js"></script>
+	<script src="./lang/fr.js"></script>
+	<script src="./lang/ja.js"></script>
+	<script src="./lang/pt.js"></script>
+	<script src="./lang/ko.js"></script>
+	<script src="./lang/es.js"></script>
+	<script src="./lang/it.js"></script>
+	<script src="./lang/pl.js"></script>
+	<script src="./lang/tr.js"></script>
+	<script src="./lang/th.js"></script>
+
+	<script src="./js/langs/control.js"></script>
+	<script src="./js/game.js"></script>
+	<script src="./js/audiojs/audio.min.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+
+
+
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45925296 = new Ya.Metrika({
+                    id:45925296,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45925296" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body id="major_body">
+
+<div class="mask-content"></div>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div class="big-center">
+<input type="checkbox" id="nav-toggle" hidden>
+<div class="col1 nav">
+<label for="nav-toggle" class="nav-toggle" onclick></label>
+<img id="return_home_icone" src="./img/home_icone.png" alt="" />
+<h2 class="logo"> 
+    <script>document.write(_t("Menu"));</script>
+</h2>
+<ul class="menu">
+	<select id="lang_select">
+		<option>english</option>
+		<option>русский</option>
+		<option>繁体中文</option>
+		<option>简体中文</option>
+		<option>deutsche</option>
+		<option>française</option>
+		<option>日本語</option>
+		<option>portugues</option>
+		<option>português brasileiro</option>
+		<option>한국어</option>
+		<option>español</option>
+		<option>italiano</option>
+		<option>polski</option>
+		<option>türkçe</option>
+		<option>ไทย</option>
+		<!--<option>Česky</option>
+
+		чешский
+		финский
+		венгерский
+		греческий-->
+	</select>
+	<li class="mi miact">
+		<a href="" class="milnk milnkact" title="Home"><script>document.write(_t("Home"));</script></a>
+	</li>
+	<!--<li class="mi">
+		<a href="" class="milnk" title="Home">Workout</a>
+	</li>-->
+	<li class="mi">
+		<a href="" class="milnk" title="Stats"><script>document.write(_t("Stats"));</script></a>
+	</li>
+	<li class="mi">
+		<a href="" class="milnk" title="Music"><script>document.write(_t("Music"));</script></a>
+	</li>
+	<li style="display: none;" class="mi 228230020">
+		<a href="" class="milnk" title="Memory Lamp">Memory Lamp</a>
+	</li>
+	<li style="display: none;" class="mi 228230021">
+		<a href="" class="milnk" title="Memory Comparison">Memory Comparison</a>
+	</li>
+	<li style="display: none;" class="mi 228230024">
+		<a href="" class="milnk" title="Find The Unique">Find The Unique</a>
+	</li>
+	<li style="display: none;" class="mi 228230025">
+		<a href="" class="milnk" title="Attention Symmetry">Attention Symmetry</a>
+	</li>
+	<li style="display: none;" class="mi 228230026">
+		<a href="" class="milnk" title="Speed Comparison">Speed Comparison</a>
+	</li>
+	<li style="display: none;" class="mi 228230027">
+		<a href="" class="milnk" title="Color Comparison">Color Comparison</a>
+	</li>
+	<li style="display: none;" class="mi 228230028">
+		<a href="" class="milnk" title="Speed Symmetry">Speed Symmetry</a>
+	</li>
+	<li style="display: none;" class="mi 228230023">
+		<a href="" class="milnk" title="Rotation Table">Rotation Table</a>
+	</li>
+	<li style="display: none;" class="mi 228230022">
+		<a href="" class="milnk" title="Memory Table">Memory Table</a>
+	</li>
+	<li style="display: none;" class="mi 228230029">
+		<a href="" class="milnk" title="Math Match">Math Match</a>
+	</li>
+</ul>
+<script type="text/javascript">
+
+var training_var = {};
+  $(document).ready(function(){
+		training_var = {};
+	 
+		var thisForm = this;
+		var url;
+		
+		if(!localStorage.getItem("quest_revew_request") && Number(localStorage.getItem("time_on_app")) > 3600)
+		{
+			$('#quest_revew').show();
+			$('#background_quest').show();
+		}			
+		var url = "./game/Home/index.html";
+		$.ajax({
+		 url: url,
+		 type: "GET",
+		 dataType: "html",
+		 success: function(data){   
+		   $("#wrapper").html(data);
+		 },
+		 error:function(XHR){
+			console.log(url);
+		}
+	   });  
+     $(".milnk").click(function(e){
+     	$('html, body').animate({scrollTop: 0},500);
+		training_var = {};
+		$(".milnk").removeClass('milnkact');
+		$(".mi").removeClass('miact');
+		$(this).addClass('milnkact');
+		$(this).parent().addClass('miact');
+	 	e.preventDefault();	 
+	 	var thisForm = this;
+	 	if($(thisForm).attr("title") != "Music")
+	 	{
+			
+			var url;
+			
+			if(!localStorage.getItem("quest_revew_request") && Number(localStorage.getItem("time_on_app")) > 3600)
+			{
+				$('#quest_revew').show();
+				$('#background_quest').show();
+			}			
+			var url = "./game/"+$(thisForm).attr("title")+"/index.html";
+			$.ajax({
+			 url: url,
+			 type: "GET",
+			 dataType: "html",
+			 success: function(data){   
+			   $("#wrapper").html(data);
+			 },
+			 error:function(XHR){
+				console.log(url);
+			}
+		   });
+		   	$("#wrapper").show();
+ 			$("#wrapper_music").hide();	 		
+	 	}
+	 	else
+	 	{
+	 		$("#wrapper").hide();
+	 		$("#wrapper_music").show();
+	 		$('iframe', $("#wrapper_music")).get(0).contentWindow.resize_iframe();
+	 	}
+	});
+	 	$("#return_home_icone").click(function(e){
+	 	$('html, body').animate({scrollTop: 0},500);
+		training_var = {};
+		$(".milnk").removeClass('milnkact');
+		$(".mi").removeClass('miact');
+		$('[title="Home"]').addClass('milnkact');
+		$('[title="Home"]').parent().addClass('miact');
+	 	e.preventDefault();	 
+	 	var thisForm = this;
+
+		var url;
+		
+		if(!localStorage.getItem("quest_revew_request") && Number(localStorage.getItem("time_on_app")) > 3600)
+		{
+			$('#quest_revew').show();
+			$('#background_quest').show();
+		}			
+		var url = "./game/"+$($('[title="Home"]')).attr("title")+"/index.html";
+		$.ajax({
+		 url: url,
+		 type: "GET",
+		 dataType: "html",
+		 success: function(data){   
+		   $("#wrapper").html(data);
+		 },
+		 error:function(XHR){
+			console.log(url);
+		}
+	   });
+	   	$("#wrapper").show();
+			$("#wrapper_music").hide();	 		
+
+     });
+
+
+
+  });
+
+</script>
+
+</div>
+
+<div class="col2 main" id="col2_screen" role="main">
+
+<div class="wrapper-holder" id="wrapper-holder">
+<label id="fullscreen_btn"></label>
+<div id="wrapper">
+
+
+</div>
+<div id="wrapper_music" style="display: none;">
+	<div class="train_ifarme">
+	 <iframe src="game/Music/game.html" align="center" allowtransparency="true" seamless scrolling="no">
+	 </iframe>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<style>
+#background_quest
+{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	opacity: 0.3;
+	background: #d5d5d5;
+	top: 0;
+	z-index: 199;
+	height: 3000px;
+}
+.quest_revew
+{
+	position: absolute;
+	padding: 30px;
+	background: #fff;
+	top: 50%;
+	margin-top: -250px;
+	left: 50%;
+	margin-left: -350px;
+	z-index: 199;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	text-align: center;
+}
+.question_revew
+{
+	margin-top: 30px !important;
+}
+#quest_revew_dislike_textarea
+{
+	width: 100%;
+	height:200px;
+}
+#quest_revew_dislike>input
+{
+	width: 100%;
+}
+</style>
+		<div id="background_quest" style="display:none;"></div>
+		<div id="quest_revew" style="display:none;" class="quest_revew">
+			<h1><script>document.write(_t("You like 7-in-1 Brain Sharpness Bundle?"));</script></h1>
+			<a id="question_revew_yes" onclick="yaCounter45925296.reachGoal('like_app_bsh71');" class="btn pure-button question_revew"><script>document.write(_t("YES"));</script></a>
+			<a id="question_revew_no" onclick="yaCounter45925296.reachGoal('dislike_app_bsh71');" class="btn pure-button question_revew"><script>document.write(_t("NO"));</script></a>
+		</div>
+		<div id="quest_revew_like_help" style="display:none;" class="quest_revew">
+			<h1><script>document.write(_t("Do you want to help project development?"));</script></h1>
+			<a id="question_help_yes" class="btn pure-button question_revew"><script>document.write(_t("YES"));</script></a>
+			<a id="question_help_no" class="btn pure-button question_revew"><script>document.write(_t("NO"));</script></a>
+		</div>
+		<div id="quest_revew_like_help_reques" style="display:none;" class="quest_revew">
+			<h1><script>document.write(_t("Please post a review about</br>the game on the store page, </br>and tell me what you liked about the game.</br> Your feedback is very important to us."));</script></h1>
+			<a id="question_help_ok" class="btn pure-button question_revew"><script>document.write(_t("OK"));</script></a>
+		</div>
+		<div id="quest_revew_dislike" style="display:none;" class="quest_revew">
+			<h1><script>document.write(_t("Please tell us what went wrong?</br>Perhaps we can fix this?</br>Your feedback is very important to us."));</script>
+			</h1>
+			<p><script>document.write(_t("Email for reply (optional)"));</script></p>
+			<input id="quest_revew_email" type="text"/>
+			<p><script>document.write(_t("Comment"));</script></p>
+			<textarea id="quest_revew_dislike_textarea"></textarea></br>
+			<a id="quest_revew_dislike_send" class="btn pure-button question_revew"><script>document.write(_t("SEND"));</script></a>
+			<a id="quest_revew_dislike_cansel" class="btn pure-button question_revew"><script>document.write(_t("CANCEL"));</script></a>
+		</div>
+		<script>
+		if(Number(localStorage.getItem("time_on_app"))<3600 && Number(localStorage.getItem("quest_revew_request"))<10)
+		{
+			var request_revew = setInterval(function()
+			{
+				var time = Number(localStorage.getItem("time_on_app"))+1;
+				localStorage.setItem("time_on_app", time);
+				//console.log(localStorage.getItem("time_on_app"));
+			},1000);				
+		}
+		if(!localStorage.getItem("quest_revew_request") && Number(localStorage.getItem("time_on_app")) > 3600)
+		{
+			$('#quest_revew').show();
+			$('#background_quest').show();
+		}
+		
+		
+		$('#question_revew_yes').click(function()
+		{
+			$('#quest_revew').hide();
+			$('#quest_revew_like_help').show();
+			localStorage.setItem("quest_revew_request", 99);
+		});
+		$('#question_revew_no').click(function()
+		{
+			$('#quest_revew').hide();
+			$('#quest_revew_dislike').show();
+			localStorage.setItem("quest_revew_request", 1);
+		});
+		$('#question_help_yes').click(function()
+		{
+			$('#quest_revew_like_help').hide();
+			$('#quest_revew_like_help_reques').show();
+		});
+		$('#question_help_no').click(function()
+		{
+			$('#quest_revew_like_help').hide();
+			$('#background_quest').hide();
+		});
+		$('#question_help_ok').click(function()
+		{
+			$('#quest_revew_like_help_reques').hide();
+			$('#background_quest').hide();
+		});
+		$('#quest_revew_dislike_send').click(function()
+		{
+			$('#quest_revew_dislike').hide();
+			$('#background_quest').hide();
+			ajax_params = {};
+			ajax_params["user_name"] = $('#quest_revew_dislike_textarea').val();
+			ajax_params["user_phone"] = $('#quest_revew_email').val();
+			$.ajax({						
+				type: "POST",
+				url: "http://polypack-ufa.ru/ajax/send_message.php",
+				data: ajax_params,
+				success: function(data){				                                       					
+					setTimeout(function(){
+						//console.log(data);
+					}, 3000);
+				},
+				error: function(data){
+					//console.log(JSON.stringify(data));
+				}
+			});			
+		});
+		$('#quest_revew_dislike_cansel').click(function()
+		{
+			$('#quest_revew_dislike').hide();
+			$('#background_quest').hide();
+		});
+
+		try
+		{
+			var gui = require('nw.gui');
+			var win = gui.Window.get();
+			//win.showDevTools();
+			win.maximize();
+		}
+		catch(e)
+		{
+
+		}
+
+		var img = ['228230020', '228230021', '228230024', '228230025', '228230026', '228230027', '228230028', '228230023', '228230022', '228230029'];
+
+		var cur_platform = navigator.platform;
+
+		for(var i=0; img.length > i; i++)
+		{
+			try
+			{
+				/*
+				if(!(cur_platform.toLowerCase().indexOf('mac') + 1))
+				{
+					var fs = nw.require('fs');
+					var file = fs.readFileSync(gui.App.dataPath+'/Local Storage/leveldb/'+img[i]);					
+				}
+				else
+				{
+					var path_ = process.cwd().split("BrainSharpness71.app")[0];
+					var fs = nw.require('fs');
+					var file = fs.readFileSync(path_+'temp/Default/Local Storage/leveldb/'+img[i]);					
+				}*/
+				$('li.'+img[i]).show();
+
+			}
+			catch(e)
+			{
+				//$('li.'+img[i]).show();
+			}
+		}
+		</script>
+</body>
+</html>
