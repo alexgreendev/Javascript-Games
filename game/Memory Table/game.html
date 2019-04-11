@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../css/game.css">
+	
+	<title></title>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/game.js"></script>
+
+</head>
+
+
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<body style="display: block;">
+		<div id="nhead">
+			<h1>Memory Table</h1>
+		</div>
+		<div class="wrapper_game_menu">
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1" title="GAME"><script>document.write(parent.window._t("GAME"));</script></label>
+		 
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2" title="INFO"><script>document.write(parent.window._t("INFO"));</script></label>
+		 
+			<input id="tab3" type="radio" name="tabs">
+			<label for="tab3" title="TUTORIAL"><script>document.write(parent.window._t("TUTORIAL"));</script></label>
+		</div>
+		<section id="content-tab1">
+
+			<div class="game_menu">
+				<div class="scene_prew">
+					<span class="game_screen_left"> 
+						<h4><script>document.write(parent.window._t("Training:"));</script></h4> 
+						<div ><script>document.write(parent.window._t("Memory Spatial"));</script></div></br>
+						<div ><script>document.write(parent.window._t("Working Memory"));</script></div></br>
+					</span>
+					<div class="game_footer">
+						<div style="text-align:center;"><b><script>document.write(parent.window._t("Press the Spacebar to start training or clik button below"));</script></b></div>
+						<a class="btn pure-button" id="begin"><script>document.write(parent.window._t("BEGIN"));</script></a>
+					</div>
+				</div>
+			</div>
+			<div class="game_scene" style="display:none;">	
+				<div id="wraper_game">
+					<div class="cover_scene">
+						
+					</div>
+					<div class="cover_scene_int">3</div>
+					<div class="memory_table_scene">
+						<div class="memory_table_panel">
+							<span><div><script>document.write(parent.window._t("Time").toUpperCase());</script> </div><div class="param_time">0:00</div></span>
+							<span><div><script>document.write(parent.window._t("LEVEL").toUpperCase());</script> </div><div class="param_level">1</div></span>
+							<span><div><script>document.write(parent.window._t("SCORE").toUpperCase());</script> </div><div class="param_score">0</div></span>
+						</div>
+						<div class="memory_table_log">
+							<span class="memory_table_com"><script>document.write(parent.window._t("Find the number:"));</script></span>
+							
+						</div>	
+					<table class="memory_table_table">
+						<tbody>
+							<tr>
+								<td data-id="2" class="enable big"><div>2</div></td>
+								<td data-id="7" class="enable big"><div>7</div></td>
+								<td data-id="6" class="enable big"><div>6</div></td>
+							</tr>
+							<tr>
+								<td data-id="4" class="enable big"><div>4</div></td>
+								<td data-id="8" class="enable big"><div>8</div></td>
+								<td data-id="3" class="enable big"><div>3</div></td>
+							</tr>
+							<tr>
+								<td data-id="5" class="enable big"><div>5</div></td>
+								<td data-id="9" class="enable big"><div>9</div></td>
+								<td data-id="1" class="enable big"><div>1</div></td>
+							</tr>
+						</tbody>
+					</table>		
+
+					</div>		
+				</div>
+				</br><a class="btn pure-button return_main_menu" href=""><script>document.write(parent.window._t("Return to the main menu"));</script></a>
+			</div>
+			<div id="resultswindow" style="display: none;">
+				<div class="content">
+					<span class="game_screen_left"> 
+						<span>
+							<table class="table_result">
+								<tbody>
+									<tr id="results_level">
+										<td></td>
+										<td></td>
+									</tr>
+									<tr id="results_score">
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</span> 
+					</span>
+					<div style="text-align:center;"><b><script>document.write(parent.window._t("Press the Spacebar to start training or clik button below"));</script></b></div>
+					<div class="close"><a id="resultclose" class="btn pure-button"><script>document.write(parent.window._t("PLAY AGAIN"));</script></a></div>
+				</div>
+			</div>
+
+		</section>  
+		<section id="content-tab2">
+			<h1>
+			Memory Table
+			</h1>
+			<p>
+				<script>document.write(parent.window._t("The game improves the evaluation memory, functioning literally seconds. It works when we cross the road and see if the car is going to meet, or when we add numbers in the mind."));</script>
+			</p>
+		</section>
+		<section id="content-tab3">
+			<h1>
+			Memory Table</br><script>document.write(parent.window._t("TUTORIAL"));</script>
+			</h1>
+			<p>
+				<script>document.write(parent.window._t("Remember the location of the orange cells.")+" ");</script>
+				<script>document.write(parent.window._t("Find the orange cells and click on them with the left mouse button."));</script>
+			</p>
+		</section>
+		<script src="./js/memory_table.js"></script>
+	</body>
+</html>

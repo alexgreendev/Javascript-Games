@@ -1,0 +1,199 @@
+﻿html, body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #FFFFFF;
+	margin: 0;
+	font-size: 20px;
+}
+.scene_head
+{
+    width: 100%;
+    padding: 10px;
+	background: #4a517a;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#cinco {
+	text-align: center;
+}
+
+
+#plus {
+	vertical-align: middle;
+	position: absolute;
+	font-size: 3em;
+}
+
+div {
+	clear: both;
+}
+
+.btn_block
+{
+	padding: 10px;
+	margin: 20px;
+}
+#nhead {
+	padding: 5px;
+	font-size: 1em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #BF703E;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#study {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 140px;
+}
+
+#instruct 
+{
+	padding: 10px;
+	display: none;
+}
+
+h4 {
+	font-size: 25px;
+}
+.close {
+	padding-top: 5%;
+	margin: auto;
+	text-align: center;
+}
+
+#resultswindow 
+{
+	padding: 10px;
+	display: none;
+	padding: 30px 45px 45px;
+	max-width: 768px;
+	margin: 0 auto;
+}
+#resultstwo_level
+{
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+.game_menu
+{
+	min-height: 200px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 30px 45px 45px;
+}
+.pure-button
+{
+	background: #BF703E;
+	color: #FFFFFF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.pure-button:hover
+{
+	background: #4a517a;
+}
+.game_screen_left
+{
+    width: 60%;
+    text-align: left;	
+	position: relative;
+	float: left;
+}
+.game_screen_right
+{
+    width: 40%;
+    text-align: left;
+	position: relative;	
+	float: left;
+	min-width: 200px;
+}
+.game_screen_left div, .game_screen_right div
+{
+	display: inline;
+}
+.game_footer
+{
+    padding: 10px;
+	text-align: center;
+}
+.btn 
+{
+	padding: 10px;
+	display: block;
+	margin-top: 20px;
+	padding: 10px;
+	width: auto;
+	text-align: center;
+	margin: 5px;
+}
+@media screen and (max-width: 650px) 
+{
+	.game_screen_left
+	{
+		width: 100%;
+	}
+	.game_screen_right
+	{
+		width: 100%;
+	}
+}
+
+.image-table, .icon-table, .verbal_table
+{ 
+	border: 1px solid #bbc2c5; 
+	margin: 24px auto 0 auto; 
+	border-collapse:collapse;
+	text-align: center;
+} 
+.image-table td , .icon-table td
+{ 
+	width: 24px; 
+	height: 24px;  
+	border-collapse:collapse;
+}
+.icon-table td
+{
+	border: 1px solid #bbc2c5; 
+	cursor: pointer;
+}
+.icon-table td:hover
+{
+	border: 1px solid #bbc2c5; 
+	cursor: pointer;
+	background: #b7c1ff;
+}
+.icon-table td div.off
+{
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+.icon-table td div.on
+{
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+    border: 2px solid #7ba3bd;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+#progress_bar
+{
+	margin: 10px;
+	height: 10px;
+	width: 0px;
+	background-color: #b7c1ff;
+}

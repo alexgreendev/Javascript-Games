@@ -1,0 +1,135 @@
+body
+{
+    overflow: hidden;
+}
+#wraper_game
+{
+	text-align: center;
+	color: #000000 !important;
+    background-image: url(../../../img/blackboard.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    font-style: italic;
+    font-family: cursive;
+}
+.math_match_scene
+{
+	width: 100%;
+	height: 100%;
+    text-align: -webkit-center;
+}
+.math_match_left, .math_match_right
+{
+    border-collapse: collapse;
+    margin: 20px;
+    text-align: center;
+    table-layout: auto;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    height: 150px;
+    display: inline-block;
+    border: 3px #ffffff solid;
+    font-size: 50px;
+    line-height: 2.9;
+    font-weight: bold;
+    padding: 15px;
+    width: 30%;
+    color: #fff;
+}
+.math_match_panel
+{
+    font-size: 15px;  
+    margin: 25px;
+    max-width: 50%;
+    border: 3px #ffffff solid;
+    color: #fff;
+}
+.math_match_panel>span
+{
+    display: inline-block;  
+    margin: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
+}
+.param_time, .param_score, .param_level
+{
+    font-weight: bold;
+}
+.math_match_log
+{
+    font-size: 30px;
+    padding: 10px 30px 10px 30px;
+    width: 85%;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.math_match_div
+{
+    height: auto; 
+    width: auto; 
+    color: #ffffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 1;
+}
+.math_match_div1
+{
+    font-size: 100px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+}
+.math_match_div2
+{
+    font-size: 75px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+}
+.math_match_div3
+{
+    font-size: 50px;
+    padding: 5px 5px 5px 5px;
+    margin: 3px;
+}
+.math_match_div4
+{
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+    margin: 3px;
+}
+/*
+.math_match_div:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}*/
+
+.math_match_y_n
+{
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    line-height: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 10px;
+}
+.answer_chech
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+
+.math_match_answer_button
+{
+    margin-bottom: 70px;
+}

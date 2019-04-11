@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<title></title>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/game.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../../css/jquery-ui-custom.0.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"/>
+
+</head>
+
+<body style="float: left;">
+
+<style>
+.slide-button {
+	color: #bbadd7 !important;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: 900 !important;
+	font-size: 55px !important;
+	border-radius: 30px !important;
+	letter-spacing: 4px !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+	width: 65px !important;
+	padding: 0 !important;
+	height: 60px;
+	margin-top: 31px !important;
+	vertical-align: middle;
+}
+.slide-button:hover
+{
+	color: #39059e !important;
+}
+
+.current_day
+{
+	background-color: #5f3aa6;
+	color: #fff;
+}
+.wrap_train_result
+{
+	margin-top: 10px;
+}
+.results_head td
+{
+	font-weight: 900;
+	color: #000 !important;
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
+	
+}
+.train_table_ td
+{
+    text-align: center;
+}
+.train_table_ td div
+{
+    background-color: #c1c1c1;
+    border-radius: 45px;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 25px;
+    margin-top: 10px;
+}
+.train_table_ td div.train_active
+{
+	background-color: #00adee;
+	color: #fff;
+}
+.train_head_
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.train_day_
+{
+	font-size: 20px;
+    font-weight: 600;
+    background-color: #00adee;
+    color: #ffffff;
+    padding: 11px 20px 11px 20px;
+	float: left;
+	margin-top: 10px;
+}
+.train_day_::after
+{
+    content: '';
+    top: 69px;
+    left: 141px;
+    border: 23px solid transparent;
+    border-left: 25px solid #00adee;
+    position: absolute;
+}
+#month_train
+{
+	font-size: 20px;
+	margin: 20px;
+}
+#wrapper
+{
+	padding: 0px;
+}
+</style>
+
+<div class="wrapper-holder" id="wrapper-holder">
+<div id="wrapper">
+<div class="home-top">
+<h1 class="home-title"><script>document.write(parent.window._t("Brain Trainings"));</script></h1>
+</div>
+<div class="home-second-wrap">
+<div class="home-second">
+<div class="home-second-teasers">
+<div class="home-teaser-header">
+<script>document.write(parent.window._t("IMPROVE YOUR"));</script>: 
+</div>
+<div class="home-teaser home-teaser-1">
+<p class="home-teaser-text"><script>document.write(parent.window._t("Fluid Intelligence"));</script></p>
+</div>
+<div class="home-teaser home-teaser-2">
+<p class="home-teaser-text"><script>document.write(parent.window._t("Working Memory"));</script></p>
+</div>
+<div class="home-teaser home-teaser-3">
+<p class="home-teaser-text"><script>document.write(parent.window._t("Brain Sharpness"));</script></p>
+</div>
+</div>
+</div>
+<img id="brain_mozg_img" src="../../img/brain_mozg.png"/>
+</div>
+<div class="game_category_block">
+<h2 class="game_category_title game_category_title_memory"><script>document.write(parent.window._t("Memory"));</script></h2>
+<article class="game-preview game-preview_memory  card  games-content__item">
+        <a class="game-preview__link 228230020" href="/game/back/" title="Memory Lamp">
+            <div class="game-preview__img-wrap 228230020">
+                <img class="game-preview__img" height="124" src="../../img/memory_lamp.png" alt="Memory Lamp">
+			</div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Memory Lamp</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Working Memory")+", ");document.write(parent.window._t("Fluid Intelligence"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_memory  card  games-content__item">
+        <a class="game-preview__link 228230021" href="/game/cwm/" title="Memory Comparison">
+            <div class="game-preview__img-wrap 228230021">
+                <img class="game-preview__img" height="124" src="../../img/memory_comparison.png" alt="Memory Comparison">
+			</div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Memory Comparison</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Working Memory")+", ");document.write(parent.window._t("Fluid Intelligence")+", ");document.write(parent.window._t("Brain Sharpness"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_memory  card  games-content__item">
+        <a class="game-preview__link 228230022" href="./game/spacetask/" title="Memory Table">
+            <div class="game-preview__img-wrap 228230022">
+                <img class="game-preview__img" height="124" src="../../img/memory_table.png" alt="Memory Table">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Memory Table</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Working Memory")+", ");document.write(parent.window._t("Visuo-spatial"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_memory  card  games-content__item">
+        <a class="game-preview__link 228230023" href="./game/corsi/" title="Rotation Table">
+            <div class="game-preview__img-wrap 228230023">
+                <img class="game-preview__img" height="124" src="../../img/rotation_table.png" alt="Rotation Table">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Rotation Table</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Working Memory")+", ");document.write(parent.window._t("Visuo-spatial")+", ");document.write(parent.window._t("Short term working memory"));</script></p>
+            </div>
+        </a>
+</article>
+</div>
+<div class="game_category_block">
+<h2 class="game_category_title game_category_title_attention"><script>document.write(parent.window._t("Attention"));</script></h2>
+<article class="game-preview game-preview_attention  card  games-content__item">
+        <a class="game-preview__link 228230024" href="/game/Snapshot Mind/" title="Find The Unique">
+            <div class="game-preview__img-wrap 228230024">
+                <img class="game-preview__img" height="124" src="../../img/find_the_unique.png" alt="Find The Unique">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Find The Unique</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Visual search")+", ");document.write(parent.window._t("Attention"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_attention  card  games-content__item">
+        <a class="game-preview__link 228230025" href="./game/Schulte Tables/" title="Attention Symmetry">
+            <div class="game-preview__img-wrap 228230025">
+                <img class="game-preview__img" height="124" src="../../img/attention_symmetry.png" alt="Attention Symmetry">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Attention Symmetry</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Attention")+", ");document.write(parent.window._t("Concentration"));</script></p>
+            </div>
+        </a>
+</article>
+</div>
+<div class="game_category_block">
+<h2 class="game_category_title game_category_title_speed"><script>document.write(parent.window._t("Speed:").slice(0, -1));</script></h2>
+<article class="game-preview game-preview_speed  card  games-content__item">
+        <a class="game-preview__link 228230026" href="./game/Anagrams/" title="Speed Comparison">
+            <div class="game-preview__img-wrap 228230026">
+                <img class="game-preview__img" height="124" src="../../img/speed_comparison.png" alt="Speed Comparison">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Speed Comparison</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Brain Sharpness")+", ");document.write(parent.window._t("Reaction Rate"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_speed  card  games-content__item">
+        <a class="game-preview__link 228230027" href="/game/Find The Number/" title="Color Comparison">
+            <div class="game-preview__img-wrap 228230027">
+                <img class="game-preview__img" height="124" src="../../img/color_comparison.png" alt="Color Comparison">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Color Comparison</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Speed reading")+", "); document.write(parent.window._t("Arbitrary attention")+", "); document.write(parent.window._t("Selective attention")+", ");document.write(parent.window._t("Brain Sharpness")+", ");document.write(parent.window._t("Reaction Rate"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_speed  card  games-content__item">
+        <a class="game-preview__link 228230028" href="./game/fastest/" title="Speed Symmetry">
+            <div class="game-preview__img-wrap 228230028">
+                <img class="game-preview__img" height="124" src="../../img/speed_symmetry.png" alt="Speed Symmetry">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Speed Symmetry</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Arbitrary attention")+", "); document.write(parent.window._t("Selective attention")+", ");document.write(parent.window._t("Brain Sharpness")+", ");document.write(parent.window._t("Reaction Rate"));</script></p>
+            </div>
+        </a>
+</article>
+<article class="game-preview game-preview_speed   card  games-content__item">
+        <a class="game-preview__link 228230029" href="./game/math/" title="Math Match">
+            <div class="game-preview__img-wrap 228230029">
+                <img class="game-preview__img" height="124" src="../../img/math_match.png" alt="Math Match">
+            </div>
+            <div class="game-preview__about">
+                <h3 class="game-preview__title">Math Match</h3>
+                <p class="game-preview__group"><script>document.write(parent.window._t("Mental arithmetic skills")+", ");document.write(parent.window._t("Brain Sharpness")+", ");document.write(parent.window._t("Reaction Rate"));</script></p>
+            </div>
+        </a>
+</article>
+</div>
+<script type="text/javascript">
+
+	resize_iframe();
+    var img = ['228230020', '228230021', '228230022', '228230023', '228230024', '228230025', '228230026', '228230027', '228230028', '228230029'];
+    var img_id = {};
+
+    img_id['Rotation Table'] = '859470';
+    img_id['Memory Table'] = '859490';
+    img_id['Math Match'] = '859540';
+
+    //var gui = require('nw.gui');
+    //var fs = nw.require('fs');
+    var cur_platform = navigator.platform;
+    for(var i=0; img.length > i; i++)
+    {
+        try
+        {
+            /*
+            if(!(cur_platform.toLowerCase().indexOf('mac') + 1))
+            {
+                var file = fs.readFileSync(gui.App.dataPath+'/Local Storage/leveldb/'+img[i]);
+            }
+            else
+            {
+                var path_ = process.cwd().split("BrainSharpness71.app")[0];
+                var file = fs.readFileSync(path_+'temp/Default/Local Storage/leveldb/'+img[i]);             
+            }*/
+            var cur_img = $('div.'+img[i]);
+            var cur_wrap_img = $('div.'+img[i]+'>img');
+            cur_wrap_img.css('opacity', '1');
+            cur_img.css('background', 'none');
+        }
+        catch(e)
+        {
+            var cur_img = $('a.'+img[i]);
+            var cur_wrap_img = $('div.'+img[i]);
+            cur_img.attr('title_game', 'n');
+/*
+            var cur_img = $('div.game-preview__img-wrap');
+            var cur_wrap_img = $('div.game-preview__img-wrap>img');
+            cur_wrap_img.css('opacity', '1');
+            cur_img.css('background', 'none');*/
+        }
+    }
+
+     $(".game-preview__link").click(function(e){
+
+        window.parent.$('html, body').animate({scrollTop: 0},500);
+
+		e.preventDefault();
+		training_var = {};
+		var thisForm = this;
+        if($(thisForm).attr('title_game') != 'n')
+        {
+            $(".milnk", window.parent.document).removeClass('milnkact');
+            $(".mi", window.parent.document).removeClass('miact');
+            $.each($(".milnk", window.parent.document), function( index, value ) {
+                if($(this).text() === $(thisForm).attr('title'))
+                {
+                    $(this).addClass('milnkact');
+                    $(this).parent().addClass('miact');             
+                }
+            });
+            
+            
+            var url;
+            var url = "../../game/"+$(thisForm).attr('title')+"/index.html";
+            $('title').html($(thisForm).attr('title'));
+            $.ajax({
+             url: url,
+             type: "GET",
+             dataType: "html",
+             success: function(data){   
+               $("#wrapper", window.parent.document).html(data);
+             },
+             error:function(XHR){/*
+                console.log(url);*/
+            }
+           });            
+        }
+        else
+        {
+            try
+            {
+                gui.Shell.openExternal("steam://advertise/"+img_id[$(thisForm).attr('title')]);
+            }
+            catch(e)
+            {
+
+            }
+
+        }
+     });
+
+
+</script>
+</div>
+</div>
+</body></html>

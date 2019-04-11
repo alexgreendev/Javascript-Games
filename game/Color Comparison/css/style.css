@@ -1,0 +1,129 @@
+body
+{
+    overflow: hidden;
+}
+#wraper_game
+{
+	text-align: center;
+	color: #000000 !important;
+}
+.color_comparison_scene
+{
+	width: 100%;
+    height: 100%;
+    text-align: -webkit-center;
+    padding-bottom: 40px;
+}
+.color_comparison_left, .color_comparison_right
+{
+    border-collapse: collapse;
+    margin: 20px;
+    text-align: center;
+    table-layout: auto;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 40px;
+    height: 150px;
+    display: inline-block;
+    background: #080a19;
+    border: 5px #7d00bb solid;
+    font-size: 50px;
+    line-height: 2.9;
+    font-weight: bold;
+    padding: 15px;
+}
+.color_comparison_panel
+{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+    width: 85%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.color_comparison_panel>span
+{
+    display: inline-block;  
+    margin: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
+}
+.param_time, .param_score, .param_level
+{
+    font-weight: bold;
+}
+.color_comparison_log
+{
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    width: 85%;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.color_comparison_div
+{
+    height: auto; 
+    width: auto; 
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 1;
+}
+.color_comparison_div1
+{
+    font-size: 100px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+}
+.color_comparison_div2
+{
+    font-size: 75px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+}
+.color_comparison_div3
+{
+    font-size: 50px;
+    padding: 5px 5px 5px 5px;
+    margin: 3px;
+}
+.color_comparison_div4
+{
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+    margin: 3px;
+}
+/*
+.color_comparison_div:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}*/
+
+
+.color_comparison_y_n
+{
+    color: #fff;
+    display: inline-block;
+    width: 150px;
+    font-size: 25px;
+    height: 50px;
+    line-height: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.answer_chech
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}

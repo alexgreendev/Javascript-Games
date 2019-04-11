@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../css/game.css">
+	
+	<title></title>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/game.js"></script>
+
+</head>
+
+
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<body style="display: block;">
+		<div id="nhead">
+			<h1>Math Match</h1>
+		</div>
+		<div class="wrapper_game_menu">
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1" title="GAME"><script>document.write(parent.window._t("GAME"));</script></label>
+		 
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2" title="INFO"><script>document.write(parent.window._t("INFO"));</script></label>
+		</div>
+		<section id="content-tab1">
+
+			<div class="game_menu">
+				<div class="scene_prew">
+					<span class="game_screen_left"> 
+						<h4><script>document.write(parent.window._t("Training:"));</script></h4> 
+						<div ><script>document.write(parent.window._t("Mental arithmetic skills"));</script></div></br>
+						<div ><script>document.write(parent.window._t("Brain Sharpness"));</script></div></br>
+						<div ><script>document.write(parent.window._t("Reaction Rate"));</script></div></br>
+					</span>
+					<div class="game_footer">
+						<div style="text-align:center;"><b><script>document.write(parent.window._t("Press the Spacebar to start training or clik button below"));</script></b></div>
+						<a class="btn pure-button" id="begin"><script>document.write(parent.window._t("BEGIN"));</script></a>
+					</div>
+				</div>
+			</div>
+			<div class="game_scene" style="display:none;">	
+				<div class="cover_scene">
+						
+				</div>
+				<div class="cover_scene_int">3</div>
+				<div id="wraper_game">
+
+					<div class="math_match_scene">
+						<div class="math_match_panel">
+							<span><div><script>document.write(parent.window._t("Time").toUpperCase());</script> </div><div class="param_time">0:00</div></span>
+							<span><div><script>document.write(parent.window._t("SCORE").toUpperCase());</script> </div><div class="param_score">0</div></span>
+						</div>
+						<div class="math_match_log">
+							<span class="math_match_com"><script>document.write(parent.window._t("Find the number:"));</script></span>
+							
+						</div>	
+						<div class="math_match_scene_cards">
+							<div class="math_match_left"></div>
+							<div class="math_match_right"></div>
+						</div>												
+						<div class="math_match_answer_chech">
+							<div class="answer_chech"></div>
+						</div>
+
+					</div>	
+					<div class="math_match_answer_button">
+					<div style="background-image: url(../../img/left_bt_white.png);" class="math_match_y_n">
+					<script>document.write(parent.window._t("Left").toUpperCase());</script>
+					</div>
+					<div style="background-image: url(../../img/down_bt_white.png);" class="math_match_y_n">
+					<script>document.write(parent.window._t("Equally").toUpperCase());</script>
+					</div>
+					<div style="background-image: url(../../img/right_bt_white.png);" class="math_match_y_n">
+					<script>document.write(parent.window._t("On right").toUpperCase());</script>
+					</div>
+				</div>	
+				</div>			
+				</br><a class="btn pure-button return_main_menu" href=""><script>document.write(parent.window._t("Return to the main menu"));</script></a>
+			</div>
+			<div id="resultswindow" style="display: none;">
+				<div class="content">
+					<span class="game_screen_left"> 
+						<span>
+							<table class="table_result">
+								<tbody>
+									<tr id="results_score">
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</span> 
+					</span>
+					<div style="text-align:center;"><b><script>document.write(parent.window._t("Press the Spacebar to start training or clik button below"));</script></b></div>
+					<div class="close"><a id="resultclose" class="btn pure-button"><script>document.write(parent.window._t("PLAY AGAIN"));</script></a></div>
+				</div>
+			</div>
+
+		</section>  
+		<section id="content-tab2">
+			<h1>
+			Math Match
+			</h1>
+			<p>
+				<script>document.write(parent.window._t("The game will help develop the ability to instantly analyze information, improve the speed of decision-making and quick counting skills."));</script>
+			</p>
+		</section>
+		<script src="./js/math_match.js"></script>
+	</body>
+</html>

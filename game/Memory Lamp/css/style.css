@@ -1,0 +1,103 @@
+body
+{
+    overflow: hidden;
+}
+#wraper_game
+{
+	text-align: center;
+	color: #000000 !important;
+}
+.memory_lamp_scene
+{
+    width: 100%;
+    height: 100%;
+    text-align: -webkit-center;
+    padding-bottom: 40px;
+}
+.memory_lamp_panel
+{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+    width: 85%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.memory_lamp_log
+{
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    width: 85%;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.memory_lamp_panel>span
+{
+    display: inline-block;  
+    margin: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
+}
+.param_time, .param_score, .param_level
+{
+    font-weight: bold;
+}
+
+
+.memory_lamp_table
+{
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    table-layout: auto;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    transform-origin: top;
+    max-width: 200px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.memory_lamp_div
+{
+    height: auto; 
+    width: auto; 
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(../../../img/white_lamp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.memory_lamp_div1
+{
+    font-size: 50px;
+    padding: 50px 50px 50px 50px;
+    margin: 10px;
+}
+.memory_lamp_div2
+{
+    font-size: 30px;
+    padding: 15px 25px 15px 25px;
+    margin: 5px;
+}
+.memory_lamp_div3
+{
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    margin: 3px;
+}
+.memory_lamp_div4
+{
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 3px;
+}
+/*
+.memory_lamp_div:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}*/
+

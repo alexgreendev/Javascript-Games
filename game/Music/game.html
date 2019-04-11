@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style>
+
+      body { color: #fff; font-family: sans-serif; line-height: 1.4; }
+      h1 { color: #e40981; font-size: 1.2em; padding: 14px 2px 12px; margin: 0px; }
+      h1 em { font-style: normal; color: #e40981; }
+      a { color: #fff; text-decoration: none; }
+      #wrapper { width: 400px; margin: 40px auto; }
+      
+      ol { padding: 0px; margin: 0px; list-style: decimal-leading-zero inside; color: #fff; width: 460px;  font-size: 0.9em; }
+      ol li { position: relative; margin: 0px; padding: 9px 2px 10px; border-bottom: 1px solid #333; cursor: pointer; 
+    background: url(../../img/locked.png) no-repeat, url(../../img/dlc.png) no-repeat;
+    background-size: 50px, 70px;
+    background-position: center, left top;
+    text-align: right;
+      }
+      ol li a { display: block; text-indent: -3.3ex; padding: 0px 0px 0px 20px; opacity: 0.5;}
+      li.playing { color: #e40981; text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3); }
+      li.playing a { color: #e40981; }
+      li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; line-height: 14px; margin: 0px; position: absolute; left: -24px; top: 9px; color: #000; font-size: 13px; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+      #music_credits
+      {
+        font-size: 10px;
+        bottom: 0;
+        position: absolute;
+      }
+      /*
+      #shortcuts {  bottom: 0px; width: 100%; color: #fff; font-size: 0.9em; margin: 60px 0px 0px; padding: 20px 20px 15px;  
+          clear: none !important;}
+      #shortcuts div { width: 460px; margin: 0px auto; 
+          clear: none !important;}
+      #shortcuts h1 { margin: 0px 0px 6px;     clear: none !important;}
+      #shortcuts p { margin: 0px 0px 18px;     clear: none !important;}
+      #shortcuts em { 
+        font-style: normal;
+        background: #8d0ae4;
+        padding: 3px 9px;
+        position: relative;
+        left: -3px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        clear: none !important;
+        font-size: 35px;
+        font-family: Archive;
+  }*/
+		.audiojs .time {
+			float: left;
+			height: 36px;
+			line-height: 36px;
+			margin: 0px 0px 0px 6px;
+			padding: 0px 6px 0px 12px;
+			border-left: 1px solid #000;
+			color: #ddd;
+			text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+			clear: none !important;
+		}
+		.audiojs .scrubber {
+		    position: relative;
+		    float: left;
+		    width: 280px;
+		    background: #5a5a5a;
+		    height: 14px;
+		    margin: 10px;
+		    border-top: 1px solid #3f3f3f;
+		    border-left: 0px;
+		    border-bottom: 0px;
+		    overflow: hidden;
+		    clear: none !important;
+		}
+    .volum_sound_wrap
+    {
+      background: url(../../img/sound_volume.png) no-repeat;
+      background-size: 40px;
+      background-position: left center;
+      padding: 10px 10px 10px 50px;   
+    }
+      @media screen and (max-device-width: 480px) {
+        #wrapper { position: relative; left: -3%; }
+        #shortcuts { display: none; }
+      }
+    </style>
+
+	<link rel="stylesheet" href="../../css/game.css">
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/game.js"></script>
+
+    <script src="../../js/audiojs/audio.min.js"></script>
+    <script>
+//var gui = require('nw.gui');
+$(document).ready(function()
+{
+	
+	var cur_platform = navigator.platform;
+
+	var music_arr = $('ol li');
+	var music_unlock_arr = new Array();
+	for(var i=0; music_arr.length>i; i++)
+	{
+		try
+		{
+      /*
+			if(!(cur_platform.toLowerCase().indexOf('mac') + 1))
+			{
+				var fs = nw.require('fs');
+				var file = fs.readFileSync(gui.App.dataPath+'/Local Storage/leveldb/dm/'+$('a', music_arr[i]).attr('data-src'));					
+			}
+			else
+			{
+				var path_ = process.cwd().split("IQScale81.app")[0];
+				var fs = nw.require('fs');
+				var file = fs.readFileSync(path_+'temp/Default/Local Storage/leveldb/dm/'+$('a', music_arr[i]).attr('data-src'));					
+			}*/
+			music_unlock_arr.push(music_arr[i]);
+      $(music_arr[i]).css('background', 'none');
+      $(music_arr[i]).css('text-align', 'left');
+      $('a', music_arr[i]).css('opacity', 1);
+		}
+		catch(e)
+		{
+			continue;
+		}            		
+	}
+  //music_unlock_arr[0] = $('[data-src="Aleksej_Rybnikov_Usatyj"]').parent();
+      $(function() { 
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+          trackEnded: function() {
+          	var next;
+      			for(var i=0; music_unlock_arr.length>i; i++)
+      			{
+      				if($('a', music_unlock_arr[i]).attr('data-src') == $('a', $('ol li.playing')).attr('data-src'))
+      				{
+      					if(i+1 <  music_unlock_arr.length)
+      					{
+      						next = $(music_unlock_arr[i+1]);
+      						$('ol li.playing').removeClass('playing');
+      					}
+      					else
+      					{
+      						next = $(music_unlock_arr[0]);
+      						$('ol li.playing').removeClass('playing');
+      					}
+      				}
+      			}
+            
+            var finde_file = false;
+
+            console.log(next);
+            if (!next.length) next = $('ol li').first();
+            next.addClass('playing');
+            audio.load('../../music/'+$('a', next).attr('data-src')+'.mp3');
+            audio.play();
+          }
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+            first = '../../music/'+$('a', music_unlock_arr[0]).attr('data-src')+'.mp3';
+            console.log(music_unlock_arr[0]);
+        $(music_unlock_arr[0]).addClass('playing');
+        audio.load(first);
+
+        // Load in a track on click
+        $('ol li').click(function(e) {
+          e.preventDefault();
+          for(var i=0; music_unlock_arr.length>i; i++)
+          {
+          	if($('a', music_unlock_arr[i]).attr('data-src') == $('a', this).attr('data-src'))
+          	{
+  	          $(this).addClass('playing').siblings().removeClass('playing');
+  	          audio.load('../../music/'+$('a', this).attr('data-src')+'.mp3');
+  	          audio.play();
+  	          return;
+          	}
+          	else
+          	{
+
+          	}
+          }
+
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+          var unicode = e.charCode ? e.charCode : e.keyCode;
+             // right arrow
+          if (unicode == 39) {
+            var next = $('li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.click();
+            // back arrow
+          } else if (unicode == 37) {
+            var prev = $('li.playing').prev();
+            if (!prev.length) prev = $('ol li').last();
+            prev.click();
+            // spacebar
+          } else if (unicode == 32) {
+            audio.playPause();
+          }
+        })
+      });
+  $(document).on('input', '#volum_sound', function() 
+  {
+      $('audio').prop("volume", $(this).val());
+      $('.range').css({'background':'-webkit-linear-gradient(left ,#8d0ae4 0%,#8d0ae4 '+$(this).val()*100+'%,#f6c43f '+$(this).val()*100+'%, #f6c43f 100%)'});
+  });
+  var rung_sound_volum = $('#volum_sound');
+  $('audio').prop("volume", rung_sound_volum.val());
+  $('.range').css({'background':'-webkit-linear-gradient(left ,#8d0ae4 0%,#8d0ae4 '+rung_sound_volum.val()*100+'%,#f6c43f '+rung_sound_volum.val()*100+'%, #f6c43f 100%)'});
+
+});
+
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1><script>document.write(parent.window._t("Music"));</script></h1>
+      <audio preload></audio>
+      <div class="volum_sound_wrap">
+        <input id="volum_sound" type="range" min="0" max="1" step="0.01" value="1" class="range">
+      </div>
+      <ol>
+
+        <li><a href="#" data-src="AllGoodInTheWood">Jason Shaw - All Good In The Wood</a></li>   
+        <li><a href="#" data-src="BanjoHop">Jason Shaw - Banjo Hop</a></li><!--
+        <li><a href="#" data-src="AwayInAMangerEDM">Jason Shaw - Away In A Manger</a></li>
+        <li><a href="#" data-src="BeBop25">Jason Shaw - BeBop25</a></li>
+        <li><a href="#" data-src="BigCarTheft">Jason Shaw - Big Car Theft</a></li>
+        <li><a href="#" data-src="BigSwingBand">Jason Shaw - Big Swing Band</a></li>
+        <li><a href="#" data-src="BirdInHand">Jason Shaw - Bird In Hand</a></li>
+        <li><a href="#" data-src="BoogieWoogieBed">Jason Shaw - Boogie Woogie Bed</a></li>
+        <li><a href="#" data-src="BoxcarRag">Jason Shaw - Box car Rag</a></li> 
+        <li><a href="#" data-src="BustinLoose">Jason Shaw - Bustin Loose</a></li>
+        <li><a href="#" data-src="Busybody">Jason Shaw - Busy body</a></li>
+        <li><a href="#" data-src="ComicalBanjo">Jason Shaw - Comical Banjo</a></li>
+        <li><a href="#" data-src="EnergyBed2">Jason Shaw - Energy Bed 2</a></li>
+        <li><a href="#" data-src="GreekDance">Jason Shaw - Greek Dance</a></li>
+        <li><a href="#" data-src="GreenDaze">Jason Shaw - Green Daze</a></li>
+        <li><a href="#" data-src="HarkTheHeraldAngelsEDM">Jason Shaw - Hark The Herald</a></li>
+        <li><a href="#" data-src="HotSalsa">Jason Shaw - Hot Salsa</a></li>
+        <li><a href="#" data-src="ILikePeanuts">Jason Shaw - I Like Peanuts</a></li>
+        <li><a href="#" data-src="Ion">Jason Shaw - Ion</a></li> 
+        <li><a href="#" data-src="JumpinBoogieWoogie">Jason Shaw - Jump In Boogie Woogie</a></li>
+        <li><a href="#" data-src="MegatonDrop">Jason Shaw - Megaton Drop</a></li>
+        <li><a href="#" data-src="ModernRockBoy">Jason Shaw - Modern Rock Boy</a></li>
+        <li><a href="#" data-src="MountainSun">Jason Shaw - Mountain Sun</a></li>
+        <li><a href="#" data-src="OohHey">Jason Shaw - Ooh Hey</a></li>
+        <li><a href="#" data-src="OpusOne">Jason Shaw - Opus One</a></li>
+        <li><a href="#" data-src="Pentagram">Jason Shaw - Pentagram</a></li>
+        <li><a href="#" data-src="Periscope">Jason Shaw - Periscope</a></li>
+        <li><a href="#" data-src="Piledriver">Jason Shaw - Pile driver</a></li>
+        <li><a href="#" data-src="PinksGlass">Jason Shaw - Pink's Glass</a></li> 
+        <li><a href="#" data-src="QuirkyJerk">Jason Shaw - Quirky Jerk</a></li>-->
+      </ol>
+      <a href="http://audionautix.com/" id="music_credits">music by audionautix.com</a>
+    </div>
+    <!--
+    <div id="shortcuts">
+      <div>
+        <h1>Keyboard shortcuts:</h1>
+        <p><em>&rarr;</em> Next track</p>
+        <p><em>&larr;</em> Previous track</p>
+        <p><em>Space</em> Play/pause</p>
+      </div>
+    </div>
+    -->
+    <script type="text/javascript">
+    	resize_iframe();
+
+      $("a#music_credits").click(function(e){
+
+        e.preventDefault();
+
+        try
+        {
+          gui.Shell.openExternal("http://audionautix.com/");
+        }
+        catch(e)
+        {
+
+        }
+      });
+
+    </script>
+  </body>
+</html>

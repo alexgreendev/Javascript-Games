@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../css/game.css">
+	
+	<title></title>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/game.js"></script>
+
+</head>
+
+
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<body style="display: block;">
+		<div id="nhead">
+			<h1>Color Comparison</h1>
+		</div>
+		<div class="wrapper_game_menu">
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1" title="GAME"><script>document.write(parent.window._t("GAME"));</script></label>
+		 
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2" title="INFO"><script>document.write(parent.window._t("INFO"));</script></label>
+		</div>
+		<section id="content-tab1">
+			<div class="game_menu">
+				<div class="scene_prew">
+					<span class="game_screen_left"> 
+						<h4><script>document.write(parent.window._t("Training:"));</script></h4> 
+						<div ><script>document.write(parent.window._t("Arbitrary attention"));</script></div></br>
+						<div ><script>document.write(parent.window._t("Brain Sharpness"));</script></div></br>
+						<div ><script>document.write(parent.window._t("Reaction Rate"));</script></div></br>
+					</span>
+					<div class="game_footer">
+						<div style="text-align:center;"><b><script>document.write(parent.window._t("Press the Spacebar to start training or clik button below"));</script></b></div>
+						<a class="btn pure-button" id="begin"><script>document.write(parent.window._t("BEGIN"));</script></a>
+					</div>
+				</div>
+			</div>
+			<div class="game_scene" style="display:none;">	
+				<div id="wraper_game">
+					<div class="cover_scene">
+						
+					</div>
+					<div class="cover_scene_int">3</div>
+					<div class="color_comparison_scene">
+						<div class="color_comparison_panel">
+							<span><div><script>document.write(parent.window._t("Time").toUpperCase());</script> </div><div class="param_time">0:00</div></span>
+							<span><div><script>document.write(parent.window._t("SCORE").toUpperCase());</script> </div><div class="param_score">0</div></span>
+						</div>
+						<div class="color_comparison_log">
+							<span class="color_comparison_com"><script>document.write(parent.window._t("Find the number:"));</script></span>
+							
+						</div>	
+						<div class="color_comparison_scene_cards">
+							<div class="color_comparison_left"></div>
+							<div class="color_comparison_right"></div>
+						</div>												
+						<div class="color_comparison_answer_chech">
+							<div class="answer_chech"></div>
+						</div>
+						<div class="color_comparison_answer_button">
+							<div style="background-position: left; background-image: url(../../img/left_bt.png); text-align: right;" class="color_comparison_y_n">
+							<script>document.write(parent.window._t("NO").toUpperCase());</script>
+							</div>
+							<div style="background-position: right; background-image: url(../../img/right_bt.png); text-align: left;" class="color_comparison_y_n">
+							<script>document.write(parent.window._t("YES").toUpperCase());</script>
+							</div>
+						</div>
+					</div>	
+
+				</div>
+				</br><a class="btn pure-button return_main_menu" href=""><script>document.write(parent.window._t("Return to the main menu"));</script></a>
+			</div>
+			<div id="resultswindow" style="display: none;">
+				<div class="content">
+					<span class="game_screen_left"> 
+						<span>
+							<table class="table_result">
+								<tbody>
+									<tr id="results_score">
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</span> 
+					</span>
+					<div style="text-align:center;"><b><script>document.write(parent.window._t("Press the Spacebar to start training or clik button below"));</script></b></div>
+					<div class="close"><a id="resultclose" class="btn pure-button"><script>document.write(parent.window._t("PLAY AGAIN"));</script></a></div>
+				</div>
+			</div>
+
+		</section>  
+		<section id="content-tab2">
+			<h1>
+			Color Comparison
+			</h1>
+			<p>
+				<script>document.write(parent.window._t("The game is aimed at training the speed of reaction and thinking. There is a myth that the reaction rate is the same for all, but it is not. You can easily verify this. It is enough to pass the test to determine the speed of reaction with friends or relatives. You will notice that it is different. Even one person during the day shows a different reaction rate. Another myth says that the reaction rate can not be improved. This is also not so. A lot of research confirms that the reaction is significantly increased due to exercise."));</script>
+			</p>
+		</section>
+		<script src="./js/color_comparison.js"></script>
+	</body>
+</html>
